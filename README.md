@@ -29,6 +29,8 @@
 | [`10_incident_analysis/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/10_incident_analysis) | 장애 심층 분석: CRC Error 급증 및 Link Down 장애에 대한 원인 가설(케이블 손상, 오염, SFP 접촉) 도출 | `crc_Iinkdown_analysis.md` |
 | [`11_incident_report/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/11_incident_report) | 인시던트 보고서 및 자동 검증: 11개 구조 Incident Report 작성, Python 자동 검증 스크립트 및 1분 브리핑 양식 구축 | `dco_incident_report.md`, `check_incident_report.py`, `one_minute_briefing.md` |
 | [`12_ticket_triage_handover/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/12_ticket_triage_handover) | 티켓 트리아지 및 인수인계: 복수 장애 발생 시 서비스 영향도(Blast Radius) 중심 우선순위 매트릭스 및 Handover Memo 작성 | `sample_shift_handover_log.txt`, `ticket_priority_matrix.csv`, `shift_handover.md` |
+| [`CAREER_JOB_PREP.md`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/CAREER_JOB_PREP.md) | 생성형 AI 취업 준비 프로젝트: 채용공고 분석, 경험-역량 매칭, STAR 경험 카드 5종 및 AI 모의 면접 준비 서식 | `CAREER_JOB_PREP.md` |
+
 
 ---
 
