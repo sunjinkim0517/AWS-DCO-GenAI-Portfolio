@@ -7,7 +7,7 @@ import os
 
 # 입력 파일명과 출력 파일 경로를 설정합니다.
 INPUT_FILE = "sample_dco_log.txt"
-OUTPUT_DIR = "09_log_analysis_script"
+OUTPUT_DIR = r"C:\Users\admin_23\Desktop\AWS-DCO-GenAI-Portfolio\09_log_analysis_script"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "incident_summary.md")
 
 def analyze_logs():
