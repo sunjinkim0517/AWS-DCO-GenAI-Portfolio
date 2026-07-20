@@ -1,63 +1,62 @@
-# AWS-DCO-GenAI-Portfolio
+# 🚀 AWS-DCO-GenAI-Portfolio
 
-## 1. 과정명
-
-AWS DCO 인턴십 직무 이해를 위한 생성형 AI 활용 및 포트폴리오 제작 과정
-(폴리텍 2기 데이터센터 아카데미 AX과정 연계 학습 기록)
-
----
-
-## 2. 포트폴리오 목적
-
-- AWS Korea Data Center Operations(DCO) 인턴십 지원 및 정규직 전환을 목표로, 교육 과정에서 생성형 AI를 활용해 정리한 **직무 용어 학습, 협업 역량 리포트, 면접 준비 자료**를 체계적으로 기록합니다.
-- 비전공자(분자생물학 전공 → IT 전환) 출신으로서 DCO 직무를 처음 배우는 과정을 투명하게 남기고, 실무 언어와 절차를 스스로 소화해 나가는 학습 흔적을 보여주는 것이 목적입니다.
-- 각 차시 실습에서 AI가 만든 초안을 그대로 쓰지 않고, 직접 검증하고 제 언어로 다시 정리하는 습관을 기록으로 남깁니다.
-- 최종적으로는 GitHub 포트폴리오로 정리해 인턴십 선발 과정(서류·면접)의 참고 자료로 활용합니다.
+> **AWS DCO (Data Center Operations) 인턴십 대비 생성형 AI 활용 및 엔지니어링 실습 포트폴리오**
+> 
+> *본 저장소는 비전공자(분자생물학 전공 → IT Data Center Operations 전환) 출신으로서 데이터센터 인프라 운영 지식을 습득하고, Antigravity CLI(`agy`) 등 생성형 AI 도구를 활용하여 로그 분석, 장애 보고서 작성, 티켓 트리아지(Triage) 및 인수인계(Handover) 실습을 수행한 학습 기록입니다.*
 
 ---
 
-## 3. 교육용 샘플 데이터 사용 안내
+## 📌 1. 포트폴리오 핵심 학습 철학 (Human-in-the-Loop)
 
-이 저장소의 모든 문서는 **실제 AWS 내부 절차, 실제 장비, 실제 티켓, 실제 고객 정보를 포함하지 않습니다.**
-
-- 모든 예시는 `SAMPLE`, `DEMO`, `EDU` 접두어가 붙은 교육용 가상 데이터입니다.
-- 내용은 공개된 직무 설명(JD)과 일반적인 데이터센터 운영 지식을 기반으로 학습 목적으로 작성되었습니다.
-- 실제 장비 점검이나 실제 네트워크 진단을 요구하거나 수행한 적이 없으며, 장애 원인은 항상 "확인이 필요한 가능성"으로만 서술합니다.
+- **AI는 보조 도구, 판단은 엔지니어의 몫**: AI(Antigravity CLI)가 작성한 초안을 수동적으로 수용하지 않고, 로그 기반의 **확인된 사실(Fact)**과 **추정/가설(Hypothesis)**을 엄격하게 분리하여 직접 검증하고 교정합니다.
+- **실무 언어의 체득과 도메인 맥락 이해**: PDU, UPS, N+1 이중화, ToR Switch, Link Flap, DOM 광파워 등 데이터센터 현장 용어를 직접 다루며 SOP 및 Incident 처리 프로세스를 주도적으로 소화합니다.
+- **안전한 학습 환경 준수**: 모든 예시 데이터는 `SAMPLE`, `DEMO`, `EDU` 등의 접두어가 붙은 가상의 교육용 데이터로 구성하여 실제 AWS 내부 시스템, 보안 및 고객 정보 유출 위험을 철저히 차단하였습니다.
 
 ---
 
-## 4. 폴더 구조 및 역할
+## 📂 2. 폴더 구조 및 차시별 산출물
 
-| 폴더 | 역할 |
-| --- | --- |
-| `01_dco_glossary/` | DCO 직무 키워드(PDU, UPS, N+1 이중화 등) 및 인프라 용어(Rack, NIC, ToR Switch, Link Down, CRC error 등) 정리 |
-| `02_dco_profile/` | 협업 유형 리포트 — 나의 강점·보완점을 DCO 협업 역량(Ticket, SOP, SLA, Escalation, Incident Report)과 연결 |
-| `03_sop_analysis/` | 교육용 샘플 SOP를 목적·절차·주의사항·확인항목으로 분석하고 체크리스트로 변환 |
-| `03_star_interview/` | STAR 기법 인터뷰 답변, 30초 자기소개 준비 (※ 번호 정리 예정, 추후 `04_star_interview`로 이동 검토) |
-| `04_environment_setup/` | *(예정)* 실습 환경 구축 기록 |
-| `05_antigravity_cli/` | *(예정)* CLI 도구 활용 실습 |
-| `06_cli_file_automation/` | *(예정)* CLI 기반 파일 자동화 실습 |
-| `07_log_analysis_script/` | *(예정)* 로그 분석 스크립트 실습 |
-| `08_incident_analysis/` | *(예정)* 장애 분석 실습 |
-| `09_incident_report/` | *(예정)* Incident Report 작성 실습 |
-| `10_stitch_dco_dashboard/` | *(예정)* DCO 대시보드 제작 실습 |
-| `11_exam_prep/` | *(예정)* 지필시험 대비 자료 |
-
----
-
-## 5. 보안상 포함하지 않는 정보
-
-- 실제 회사명, 실제 고객명, 실제 장비명·시리얼 번호, 실제 티켓 번호
-- 실제 IP 주소, 계정 정보, 비밀번호, API 키 등 인증·비밀 정보
-- AWS 내부 전용 문서나 절차를 그대로 재현한 내용
-- 원인이 검증되지 않은 상태에서 단정적으로 서술된 장애 원인
-- `.gitignore`에서 `.env`, `*.pem`, `*.key` 등 민감 파일 확장자를 별도로 제외 처리
+| 폴더명 | 주요 역할 및 나만의 언어로 정리한 핵심 내용 | 대표 파일 |
+| :--- | :--- | :--- |
+| [`01_dco_glossary/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/01_dco_glossary) | DCO 용어집: PDU, UPS, N+1 이중화, ToR Switch, CRC Error 등 인프라 핵심 용어를 엔지니어 관점으로 정돈 | `dco_glossary.md` |
+| [`02_dco_profile/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/02_dco_profile) | 협업 역량 리포트: 나의 강점(분석적 사고)을 DCO Ticket, SOP, SLA, Escalation 절차와 연계하여 나만의 언어로 서술 | `dco_profile.md` |
+| [`03_sop_analysis/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/03_sop_analysis) | SOP 분석: 가상의 표준 운영 절차서(SOP)를 목적·단계별 조치·주의사항으로 해부하고 현장 체크리스트로 재구성 | `sop_checklist.md` |
+| [`03_star_interview/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/03_star_interview) | STAR 인터뷰: Amazon Leadership Principles 연계 30초 자기소개 및 문제 해결 사례 정리 | `star_interview.md` |
+| [`04_environment_setup/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/04_environment_setup) | 환경 구축 기록: Git/GitHub, Python, CLI 자동화 도구 환경 설정 내역 | `setup_guide.md` |
+| [`05_antigravity_cli/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/05_antigravity_cli) | AI CLI 활용: Antigravity CLI(`agy`) 명령 체계 학습 및 템플릿 검증 | `agy_cli_check.md` |
+| [`06_cli_file_automation/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/06_cli_file_automation) | 파일 자동화: CLI 스크립트를 통한 랙 상태 점검표 및 티켓 서식 자동 생성 | `rack_checklist.md`, `sample_ticket.md` |
+| [`07_log_analysis_script/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/07_log_analysis_script)<br>[`09_log_analysis_script/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/09_log_analysis_script) | 로그 분석 파이프라인: `sample_dco_log.txt` (140줄) 자동 파싱 스크립트 작성 및 이상 징후 요약 | `analyze_logs.py`, `sample_dco_log.txt`, `incident_summary.md` |
+| [`10_incident_analysis/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/10_incident_analysis) | 장애 심층 분석: CRC Error 급증 및 Link Down 장애에 대한 원인 가설(케이블 손상, 오염, SFP 접촉) 도출 | `crc_Iinkdown_analysis.md` |
+| [`11_incident_report/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/11_incident_report) | 인시던트 보고서 및 자동 검증: 11개 구조 Incident Report 작성, Python 자동 검증 스크립트 및 1분 브리핑 양식 구축 | `dco_incident_report.md`, `check_incident_report.py`, `one_minute_briefing.md` |
+| [`12_ticket_triage_handover/`](file:///C:/Users/admin_23/Desktop/AWS-DCO-GenAI-Portfolio/12_ticket_triage_handover) | 티켓 트리아지 및 인수인계: 복수 장애 발생 시 서비스 영향도(Blast Radius) 중심 우선순위 매트릭스 및 Handover Memo 작성 | `sample_shift_handover_log.txt`, `ticket_priority_matrix.csv`, `shift_handover.md` |
 
 ---
 
-## 6. 앞으로 추가할 산출물
+## 🔍 3. AI(Antigravity CLI `agy`) 활용 및 검증 회고 (Human-in-the-Loop)
 
-- `04_environment_setup` ~ `11_exam_prep`: 환경 구축 → CLI 자동화 → 로그 분석 → 장애 분석/보고서 작성 → 대시보드 제작 → 지필시험 대비 자료까지 차시별로 순차 추가
-- Git/GitHub 실습 완료 후 전체 산출물을 GitHub 포트폴리오로 최종 정리
-- 1차 면접(8월 말) 및 2차 면접(9월 초) 대비 추가 STAR 스토리와 16개 Amazon Leadership Principles 연결 자료
-- 스터디 그룹 운영을 통한 오답노트 및 상호 개념 설명 자료
+#### 1) 사용한 도구
+- **Antigravity CLI (`agy`)**
+
+#### 2) AI가 생성한 내용 중 발견한 오류 또는 부족한 점
+1. **단순 Severity 및 텍스트 상태 추종으로 인한 리스크 미평가**:
+   - AI는 로그의 `ERROR` / `WARNING` 심각도 라벨 및 타임스탬프 순서에 의존하는 경향이 있어, 실제 서버 2대 차단(Actual Outage)이 발생했던 `EDU-TKT-2026-0201`(포트 Link Down)과 이중화 전원으로 서비스 중단이 없었던 `EDU-TKT-2026-0202`(PDU 전압 경고)의 **실제 가용성 비즈니스 임팩트 차이**를 정밀하게 가중치 반영하지 못하는 한계가 있었습니다.
+2. **복구 후 간헐적 재발(Link Flap)의 위험도 저평가**:
+   - `0201` 티켓 포트가 06:48에 `LINK_UP` 되었으나, 이후 07:05에 `LINK_FLAP_DETECTED`가 1회 추가 기록된 **간헐적 장애 재발 상태**를 단순히 "복구됨" 상태로 축약할 위험이 있었습니다.
+3. **다음 담당자 Action Item의 구체성 부족**:
+   - AI는 "원인 미확인"을 단순히 텍스트상으로 나열하는 데 그치고, 다음 담당자가 현장에서 즉시 확인해야 할 **구체적 실계측 항목**(예: DOM 광파워 모니터링 로그, 시설팀 PDU 입력 전압 측정값 대조 등)을 능동적으로 제시하지 못했습니다.
+
+#### 3) AI 결과에서 원본 자료와 다르거나 설명이 부족했던 부분
+1. **이중화(Redundancy) 가동 상태의 맥락 구분 부족**:
+   - 원본 로그에는 PDU 경고 시 `Feed B` 잉여 전원 동작 및 SSD 경고 시 `Storage Mirror`가 정상 작동 중임이 명시되어 있었으나, AI 초안에서는 서비스 상태가 장애 상황인 것처럼 오인될 수 있게 경고 위주로 단락화되는 설명의 부족함이 있었습니다.
+2. **영향 범위(Blast Radius)의 정량적 비교 미비**:
+   - 원본 로그의 "영향 서버 2대(포트 장애)"와 "영향 가능 서버 6대(PDU 전압 지속 경고)" 간의 수치적 영향 범위를 우선순위 판단 근거로 체계적으로 연결해 주는 설명이 부족하여 엔지니어의 직접적인 판단 보완이 필요했습니다.
+3. **가설(Hypothesis)과 사실(Fact)의 엄격한 분리 부족**:
+   - AI는 조치 로그 문구를 바탕으로 원인을 단정 지으려는 경향을 보였으나, 로그만으로는 파이버 피복 꺾임이나 커넥터 오염 등 **근본 원인(Root Cause)을 확정할 수 없으므로 가설 단계로 명시해야 함**을 엔지니어가 직접 재검토하고 보완했습니다.
+
+---
+
+## 🔒 4. 보안 및 교육용 데이터 사용 준수 안내
+
+- 저장소 내 모든 시스템명, IP 주소, 티켓 ID는 `SAMPLE_TOR_SW_03`, `EDU-TKT-2026-0201`, `192.0.2.1` 등 가상의 서식으로 변경되어 있습니다.
+- 실제 데이터센터 장비 조작 명령어나 비밀번호, API Key 등 보안 민감 파일은 포함되어 있지 않으며 `.gitignore`를 통해 엄격히 관리됩니다.
+- 본 저장소는 AWS DCO 직무 이해 및 인프라 운영 논리 체득을 목적으로 한 개인 학습용 포트폴리오입니다.
